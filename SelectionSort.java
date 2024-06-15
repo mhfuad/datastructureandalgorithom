@@ -3,7 +3,7 @@ public class SelectionSort {
         int arr[] = {5,2,6,3,4};
 
         for(int i = 0; i <= arr.length - 1; i++){
-            
+
         }
     }
 

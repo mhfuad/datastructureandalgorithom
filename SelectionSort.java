@@ -1,21 +1,24 @@
+import java.util.Arrays;
+
 public class SelectionSort {
     public static void main(String[] args) {
         int arr[] = {5,2,6,3,4};
 
-        for(int i = 0; i <= arr.length - 1; i++){
-
+        System.out.println(Arrays.toString(arr));
+        for(int j = 0; j <= arr.length - 1; j++){
+            for(int i = j; i <= arr.length -2; i++){
+                if(arr[i] > arr[i+1]){
+                    int temp = arr[i];
+                    arr[i] = arr[i+1];
+                    arr[i+1] = temp;
+                }
+            }
         }
+
+        System.out.println(Arrays.toString(arr));
     }
 
-    public static int selectionSearch(int[] array){
-        sort(1,2);
-        return 1;
-    }
 
-    public static int sort(int x, int y){
-        y = x + y;
-        return 0;
-    }
 
 
 }
